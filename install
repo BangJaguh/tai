@@ -1,5 +1,5 @@
 #!/bin/bash
-zenon="https://gakod.com/tailand"
+zenon="https://raw.githubusercontent.com/BangJaguh/tai/main"
 clear
 cd /usr/bin
 wget -q -O cr "$zenon/cr"
