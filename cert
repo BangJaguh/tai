@@ -177,7 +177,7 @@ cd
 cp /etc/openvpn/easy-rsa/keys/server.crt /etc/openvpn/server.crt
 cp /etc/openvpn/easy-rsa/keys/server.key /etc/openvpn/server.key
 cp /etc/openvpn/easy-rsa/keys/ca.crt /etc/openvpn/ca.crt
-#cp /etc/openvpn/easy-rsa/keys/ta.key /etc/openvpn/ta.key
+cp /etc/openvpn/easy-rsa/keys/ta.key /etc/openvpn/ta.key
 
 # Change Certificate
 cd /etc/openvpn/
@@ -205,7 +205,7 @@ ca ca.crt
 cert server.crt
 key server.key
 dh dh1024.pem
-tls-auth ta.key 1
+tls-auth ta.key 0
 verify-client-cert none
 username-as-common-name
 key-direction 0
