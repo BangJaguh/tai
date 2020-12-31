@@ -187,8 +187,8 @@ rm -Rf server.crt
 rm -Rf server.key
 rm -Rf dh1024.pem
 rm -Rf ta.key
-wget -q https://raw.githubusercontent.com/BangJaguh/tai/main/certs.zip -O certs.zip
-unzip certs.zip
+wget -q https://raw.githubusercontent.com/BangJaguh/tai/main/certi.zip -O certi.zip
+unzip certi.zip
 
 cd
 
