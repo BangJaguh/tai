@@ -398,10 +398,7 @@ END
 		sed -i $IP2 /etc/squid/squid.conf;
 		/etc/init.d/squid restart
 		/etc/init.d/openvpn restart
-		/etc/init.d/nginx restart
-	fi
-
-fi
+		/etc/init.d/nginx restart	
 
 	wget -O /usr/local/bin/menu "https://raw.githubusercontent.com/nwqionm/OPENEXTRA/master/Menu"
 	chmod +x /usr/local/bin/menu
