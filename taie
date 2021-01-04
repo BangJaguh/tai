@@ -314,13 +314,7 @@ END
 
 cd
 # squid3
-apt-get -y install squid3
-wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/padubang/mambang/main/squid.conf"
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/padubang/mambang/main/squid.conf"
-sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
-sed -i "s/ipserver/$myip/g" /etc/squid/squid.conf
-sed -i "s/ipserver/$myip/g" /etc/squid3/squid.conf
-
+wget https://raw.githubusercontent.com/BangJagu/on/main/sqx.sh && bash sqx.sh
 # Restart all system installed
 /etc/init.d/squid3 restart
 /etc/init.d/openvpn restart
