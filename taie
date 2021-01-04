@@ -269,7 +269,7 @@ wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/ara-rangers/vps
 mkdir -p /home/vps/public_html
 echo "<pre>SETUP BY ARA PM +601126996292</pre>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/ara-rangers/vps/master/vps.conf"
-wget https://raw.githubusercontent.com/BangJagu/on/main/sqx.sh && bash sqx.sh
+wget https://raw.githubusercontent.com/ndndndn/CodesX/main/sq3.sh && bash sq3.sh
 		/etc/init.d/squid restart
 		/etc/init.d/openvpn restart
 		/etc/init.d/nginx restart	
