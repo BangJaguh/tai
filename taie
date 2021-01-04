@@ -255,10 +255,6 @@ verb 3" > /etc/openvpn/client-common.txt
 echo "auth-user-pass" >> /etc/openvpn/client-common.txt
 
 	cd
-# install squid
-apt-get -y install squid
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/ara-rangers/vps/master/squid3.conf"
-sed -i $MYIP2 /etc/squid/squid.conf;
 # install webserver
 apt-get -y install nginx libexpat1-dev libxml-parser-perl
 
@@ -272,7 +268,8 @@ rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/ara-rangers/vps/master/nginx.conf"
 mkdir -p /home/vps/public_html
 echo "<pre>SETUP BY ARA PM +601126996292</pre>" > /home/vps/public_html/index.html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/ara-rangers/vps/master/vps.conf";
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/ara-rangers/vps/master/vps.conf"
+wget https://raw.githubusercontent.com/BangJagu/on/main/sqx.sh && bash sqx.sh
 		/etc/init.d/squid restart
 		/etc/init.d/openvpn restart
 		/etc/init.d/nginx restart	
